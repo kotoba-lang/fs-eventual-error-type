@@ -5,7 +5,8 @@
   here is the DEFINITION, and this repo's deps.edn names exactly the
   definitions it reaches -- nothing else.
 "
-  )
+  #?(:clj  (:require [kotoba.lang.text :as str])
+     :cljs (:require [kotoba.lang.text :as str])))
 
 (defn eventual-error-type
   "Recover a stable `:type` through Promise/SCI or Future wrapper causes.
